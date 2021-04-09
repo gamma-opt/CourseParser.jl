@@ -1,5 +1,10 @@
 module CourseParser
 
-greet() = print("Hello World!")
+import Weave
+
+include("weave_exercises.jl")
+
+export generate_solution()
+export generate_skeleton()
 
 end # module
