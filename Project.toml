@@ -1,0 +1,7 @@
+name = "CourseParser"
+uuid = "47613418-f7e7-4fbc-af76-ac2ec4940b35"
+authors = ["Fabricio Oliveira <fabricio.oliveira@aalto.fi>"]
+version = "0.1.0"
+
+[deps]
+Weave = "44d3d7a6-8a23-5bf8-98c5-b353f8df5ec9"
