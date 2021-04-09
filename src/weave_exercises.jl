@@ -1,10 +1,11 @@
+using Weave
 
 ```
 Converts exercise.jl into exercise_complete.ipynb..
 ```
-function generate_solution(path::AbstractString)
-    lines = readlines(path, keep = true)
-    solution_file = replace(path, ".jl" => "_complete.jl")
+function generate_solution(file_name::AbstractString)
+    lines = readlines(file_name, keep = true)
+    solution_file = replace(file_name, ".jl" => "_complete.jl")
 
     open(solution_file, "w+") do f
     for line in lines
@@ -21,10 +22,10 @@ function generate_solution(path::AbstractString)
 end 
 
 ```
-Converts exercise.jl into exercise_skeleton.ipynb..
+Converts exercise.jl into exercise_skeleton.ipynb.
 ```
-function generate_skeleton(path::AbstractString)
-    lines = readlines(path, keep=true)
+function generate_skeleton(file_name::AbstractString)
+    lines = readlines(file_name, keep=true)
     skeleton_file = replace(path, ".jl" => "_skeleton.jl")
 
     open(skeleton_file, "w+") do f
