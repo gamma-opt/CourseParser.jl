@@ -1,7 +1,7 @@
 using Weave
 
 ```
-Converts exercise.jl into exercise_complete.ipynb..
+Converts a file `exercise.jl` into `exercise_complete.ipynb`.
 ```
 function generate_solution(file_name::AbstractString)
     lines = readlines(file_name, keep = true)
@@ -22,7 +22,7 @@ function generate_solution(file_name::AbstractString)
 end 
 
 ```
-Converts exercise.jl into exercise_skeleton.ipynb.
+Converts `exercise.jl` into `exercise_skeleton.ipynb`.
 ```
 function generate_skeleton(file_name::AbstractString)
     lines = readlines(file_name, keep=true)
