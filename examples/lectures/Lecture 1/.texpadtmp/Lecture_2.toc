@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Convex Sets}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Convex hulls}{9}{0}{1}
+\beamer@subsectionintoc {1}{2}{Basic topology and convex sets}{13}{0}{1}
+\beamer@subsectionintoc {1}{3}{Separation and support}{22}{0}{1}

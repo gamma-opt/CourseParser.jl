@@ -1,0 +1,120 @@
+\paperheight = 29.70 cm  \paperwidth = 21.0 cm  \hoffset        = 0.46 cm
+\headheight  =  0.81 cm  \textwidth  = 15.0 cm  \evensidemargin = 0.00 cm
+\headsep     =  0.81 cm	 \textheight = 9.00 in  \oddsidemargin  = 0.00 cm					
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt} 
+
+\usepackage{eurosym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{enumitem}                       % for customizing the lists
+\usepackage{graphicx}
+\usepackage{tikz,pgfplots}
+\usetikzlibrary{shapes}
+\usepackage{color}
+\usepackage{fancyhdr}
+\usepackage{subcaption}
+\usepackage{ntheorem}
+\usepackage[utf8]{inputenc}
+\usepackage[pdfpagemode  = None,
+		    colorlinks   = true,
+		    urlcolor     = blue,
+            linkcolor    = black,
+            citecolor    = black,
+            pdfstartview = FitH]{hyperref}
+
+\usepackage{apacite}
+\usepackage{natbib}
+\usepackage{booktabs}
+\usepackage{float}
+\usetikzlibrary{arrows}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{varwidth}
+
+\setlist{align=left,topsep=0pt,itemsep=-1ex,partopsep=1ex,parsep=1ex}
+\setlist[enumerate]{topsep=0pt,leftmargin=*,labelsep=2ex,itemsep=-1ex}
+
+
+% Generator functions
+
+% Counters
+\newcounter{homeworknumber}
+\newcounter{exercisenumber}
+\newcounter{problemnumber}
+\newcommand{\HomeworkNumber}{\arabic{homeworknumber}}
+\newcommand{\ExerciseNumber}{\arabic{exercisenumber}}
+\newcommand{\ProblemNumber}{\arabic{problemnumber}}
+
+% Arguments: #1: Exercise number
+%			 #2: Date
+%			 #3: Guidelines and links
+\newcommand{\MakeExercise}[3]
+{
+	\clearpage 
+	\addtocounter{exercisenumber}{#1}
+	\setcounter{problemnumber}{0}
+	\lhead{\bf MS-E2122 - Nonlinear optimization\\
+               Prof. Fabricio Oliveira}
+	\rhead{\bf Exercise sheet #1 \\ #2}
+	\vspace*{-38pt}
+	\noindent
+	#3
+}
+
+
+% Arguments: #1: Homework number
+%			 #2: Deadline
+%			 #3: Guidelines and links
+\newcommand{\MakeHomework}[4]
+{
+	\clearpage 
+	\setcounter{homeworknumber}{#1}
+	\setcounter{problemnumber}{0}
+	\lhead{\bf MS-E2122 - Nonlinear optimization\\
+               Prof. Fabricio Oliveira}
+	\rhead{Homework #1 \\ \color{blue}\bf DEADLINE: #2}
+	\vspace*{-38pt}
+	\noindent
+	#3
+}
+
+
+% Arguments: #1: Problem description (optional)
+%			 #2: Problem text in a tex file
+%			 #3: Where the problem will be presented (home/session)	 
+\newcommand{\Problem}[3]
+{
+	\addtocounter{problemnumber}{1}
+	
+	\vspace{12pt}
+	{\noindent \large \textbf{({#3}) Problem \ExerciseNumber.\ProblemNumber{}: #1}}
+	\vspace{6pt}
+	
+	\noindent \input{#2}	
+}
+
+
+% Arguments: #1: Problem description (optional)
+%			 #2: Problem text in a tex file
+\newcommand{\HWProblem}[2]
+{
+	\addtocounter{problemnumber}{1}
+	
+	\vspace{12pt}
+	{\noindent \large \textbf{Problem \HomeworkNumber.\ProblemNumber{}: #1}}
+	\vspace{6pt}
+	
+	\noindent \input{#2}
+}
+
+\pagestyle{fancy}
+
+
+% Theorem layout
+\newtheorem{theorem}{Theorem}
+\newtheorem*{theorem-non}{Theorem}
+\newtheorem{proof}{Proof}
+\newtheorem*{proof-non}{Proof}

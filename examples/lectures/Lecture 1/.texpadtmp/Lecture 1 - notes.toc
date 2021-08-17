@@ -1,0 +1,8 @@
+\contentsline {section}{\numberline {1}What is optimisation?}{1}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Mathematical programming and optimisation}{1}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Types of mathematical optimisation models}{2}{subsection.1.2}% 
+\contentsline {section}{\numberline {2}Examples of applications}{3}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Resource allocation and portfolio optimisation}{3}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}The pooling problem: refinery operations planning}{5}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Robust optimisation}{5}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Classification: support-vector machines}{8}{subsection.2.4}% 

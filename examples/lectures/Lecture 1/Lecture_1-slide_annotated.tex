@@ -1,0 +1,38 @@
+\documentclass[xcolor=dvipsnames, aspectratio=169, mathserif]{beamer}
+\geometry{right=4cm}
+
+% Layout and definitions
+\usepackage{import}
+\import{../../Layout/}{slide_layout.tex}
+\import{../../Layout/}{definitions.tex}
+
+%% Front page and content
+\title{MS-E2122 - Nonlinear Optimization \\ Lecture 1}
+\date{}
+\author{Fabricio Oliveira}
+\institute{Systems Analysis Laboratory \\ Department of Mathematics and Systems Analysis \vskip 0.25cm 
+           Aalto University\\
+           School of Science}
+
+%% Begin of the file
+\begin{document}
+
+\frame{
+    \thispagestyle{empty}
+    \titlepage
+}
+
+\addtocounter{framenumber}{-1}
+
+\begin{frame}<beamer> 
+	\frametitle{Outline of this lecture} 
+	\tableofcontents
+%	\thispagestyle{empty}
+\end{frame} 
+
+\addtocounter{framenumber}{-1}
+
+%% Slide content
+\include{Lecture_1-slide_content.tex}
+
+\end{document}

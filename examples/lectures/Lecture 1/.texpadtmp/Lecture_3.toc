@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Convex functions}{2}{0}{1}
+\beamer@subsectionintoc {1}{1}{Basic properties}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Subgradients of convex functions}{7}{0}{1}
+\beamer@subsectionintoc {1}{3}{Differentiable functions}{13}{0}{1}
+\beamer@subsectionintoc {1}{4}{Generalisations of convexity}{27}{0}{1}

@@ -1,0 +1,8 @@
+\beamer@sectionintoc {1}{What is optimisation?}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Mathematical programming and optimisation}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Types of mathematical optimisation models}{8}{0}{1}
+\beamer@sectionintoc {2}{Applications}{15}{0}{2}
+\beamer@subsectionintoc {2}{1}{Resource allocation}{15}{0}{2}
+\beamer@subsectionintoc {2}{2}{The pooling problem: refinery operations planning}{21}{0}{2}
+\beamer@subsectionintoc {2}{3}{Robust optimisation}{26}{0}{2}
+\beamer@subsectionintoc {2}{4}{Classification: support vector machines}{34}{0}{2}

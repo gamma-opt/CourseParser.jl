@@ -1,0 +1,73 @@
+\headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
+\headcommand {\beamer@framepages {1}{1}}
+\headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
+\headcommand {\beamer@framepages {2}{2}}
+\headcommand {\beamer@sectionpages {1}{2}}
+\headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{What is optimisation?}{3}{What is optimisation?}{0}}
+\headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
+\headcommand {\beamer@framepages {3}{3}}
+\headcommand {\slideentry {1}{0}{2}{4/6}{}{0}}
+\headcommand {\beamer@framepages {4}{6}}
+\headcommand {\beamer@subsectionpages {3}{6}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{7}{Mathematical programming and optimisation}}
+\headcommand {\slideentry {1}{1}{1}{7/10}{Mathematical programming and optimisation}{0}}
+\headcommand {\beamer@framepages {7}{10}}
+\headcommand {\slideentry {1}{1}{2}{11/11}{Mathematical programming and optimisation}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@subsectionpages {7}{11}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{12}{Types of mathematical optimisation models}}
+\headcommand {\slideentry {1}{2}{1}{12/18}{Types of mathematical optimisation models}{0}}
+\headcommand {\beamer@framepages {12}{18}}
+\headcommand {\slideentry {1}{2}{2}{19/23}{Types of mathematical optimisation models}{0}}
+\headcommand {\beamer@framepages {19}{23}}
+\headcommand {\beamer@sectionpages {3}{23}}
+\headcommand {\beamer@subsectionpages {12}{23}}
+\headcommand {\sectionentry {2}{Applications}{24}{Applications}{0}}
+\headcommand {\slideentry {2}{0}{1}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\beamer@subsectionpages {24}{24}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{25}{Resource allocation}}
+\headcommand {\slideentry {2}{1}{1}{25/28}{Resource allocation}{0}}
+\headcommand {\beamer@framepages {25}{28}}
+\headcommand {\slideentry {2}{1}{2}{29/31}{Resource allocation}{0}}
+\headcommand {\beamer@framepages {29}{31}}
+\headcommand {\beamer@subsectionpages {25}{31}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{32}{The pooling problem: refinery operations planning}}
+\headcommand {\slideentry {2}{2}{1}{32/33}{The pooling problem: refinery operations planning}{0}}
+\headcommand {\beamer@framepages {32}{33}}
+\headcommand {\slideentry {2}{2}{2}{34/35}{The pooling problem: refinery operations planning}{0}}
+\headcommand {\beamer@framepages {34}{35}}
+\headcommand {\slideentry {2}{2}{3}{36/37}{The pooling problem: refinery operations planning}{0}}
+\headcommand {\beamer@framepages {36}{37}}
+\headcommand {\beamer@subsectionpages {32}{37}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{38}{Robust optimisation}}
+\headcommand {\slideentry {2}{3}{1}{38/39}{Robust optimisation}{0}}
+\headcommand {\beamer@framepages {38}{39}}
+\headcommand {\slideentry {2}{3}{2}{40/40}{Robust optimisation}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\slideentry {2}{3}{3}{41/43}{Robust optimisation}{0}}
+\headcommand {\beamer@framepages {41}{43}}
+\headcommand {\slideentry {2}{3}{4}{44/45}{Robust optimisation}{0}}
+\headcommand {\beamer@framepages {44}{45}}
+\headcommand {\slideentry {2}{3}{5}{46/46}{Robust optimisation}{0}}
+\headcommand {\beamer@framepages {46}{46}}
+\headcommand {\beamer@subsectionpages {38}{46}}
+\headcommand {\beamer@subsectionentry {0}{2}{4}{47}{Classification: support vector machines}}
+\headcommand {\slideentry {2}{4}{1}{47/48}{Classification: support vector machines}{0}}
+\headcommand {\beamer@framepages {47}{48}}
+\headcommand {\slideentry {2}{4}{2}{49/49}{Classification: support vector machines}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\slideentry {2}{4}{3}{50/51}{Classification: support vector machines}{0}}
+\headcommand {\beamer@framepages {50}{51}}
+\headcommand {\slideentry {2}{4}{4}{52/53}{Classification: support vector machines}{0}}
+\headcommand {\beamer@framepages {52}{53}}
+\headcommand {\slideentry {2}{4}{5}{54/56}{Classification: support vector machines}{0}}
+\headcommand {\beamer@framepages {54}{56}}
+\headcommand {\slideentry {2}{4}{6}{57/57}{Classification: support vector machines}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\beamer@partpages {1}{57}}
+\headcommand {\beamer@subsectionpages {47}{57}}
+\headcommand {\beamer@sectionpages {24}{57}}
+\headcommand {\beamer@documentpages {57}}
+\headcommand {\gdef \inserttotalframenumber {23}}
