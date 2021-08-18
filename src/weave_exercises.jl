@@ -15,12 +15,10 @@ function generate_solution(file_name::AbstractString)
         else
             write(f, line)    
         end
-        println("File $(file_name) written...")
     end
     end
     convert_doc(solution_file, replace(solution_file, ".jl" => ".ipynb"))
     rm(solution_file)
-    println("Notebook $(solution_file) sucessfully created.")
 end 
 
 ```
