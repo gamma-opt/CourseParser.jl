@@ -15,10 +15,12 @@ function generate_solution(file_name::AbstractString)
         else
             write(f, line)    
         end
+        println("File $(file_name) written...")
     end
     end
     convert_doc(solution_file, replace(solution_file, ".jl" => ".ipynb"))
     rm(solution_file)
+    println("Notebook $(solution_file) sucessfully created.")
 end 
 
 ```
@@ -26,14 +28,23 @@ Converts `exercise.jl` into `exercise_skeleton.ipynb`.
 ```
 function generate_skeleton(file_name::AbstractString)
     lines = readlines(file_name, keep=true)
-    skeleton_file = replace(path, ".jl" => "_skeleton.jl")
+    skeleton_file = replace(file_name, ".jl" => "_skeleton.jl")
 
     open(skeleton_file, "w+") do f
-    for line in lines
-        occursin("##", line) ? continue : write(f, line)    
-    end
+        for line in lines
+            occursin("##", line) ? continue : write(f, line)    
+        end
     end
     
     convert_doc(skeleton_file, replace(skeleton_file, ".jl" => ".ipynb"))
     rm(skeleton_file)
 end 
+
+```
+Converts a file `exercise_complete.ipynb` into `exercise_complete.jl`. Use this to first generate skeleton
+.jl scripts which will then require to have the solution cells marked with '##' and name corrected.
+```
+function generate_script_from_solution(file_name::AbstractString)
+    script_file = replace(file_name, ".ipynb" => ".jl")
+    convert_doc(file_name, script_file)
+end
