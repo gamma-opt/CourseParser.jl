@@ -9,8 +9,8 @@ function generate_solution(file_name::AbstractString)
 
     open(solution_file, "w+") do f
     for line in lines
-        if occursin("##", line)
-            new_line = lstrip(replace(line, "##" => ""))
+        if occursin("#%", line)
+            new_line = replace(line, "#%" => "")
             write(f, new_line)
         else
             write(f, line)    
@@ -30,7 +30,7 @@ function generate_skeleton(file_name::AbstractString)
 
     open(skeleton_file, "w+") do f
         for line in lines
-            occursin("##", line) ? continue : write(f, line)    
+            occursin("#%", line) ? continue : write(f, line)    
         end
     end
     
