@@ -5,12 +5,12 @@ Converts a file `exercise.jl` into `exercise_complete.ipynb`.
 ```
 function generate_solution(file_name::AbstractString)
     lines = readlines(file_name, keep = true)
-    solution_file = replace(file_name, ".jl" => "_complete.jl")
+    solution_file = replace(file_name, ".jl" => "_solution.jl")
 
     open(solution_file, "w+") do f
     for line in lines
         if occursin("#%", line)
-            new_line = replace(line, "#%" => "")
+            new_line = replace(line, "#%" => "  ")
             write(f, new_line)
         else
             write(f, line)    
@@ -30,7 +30,7 @@ function generate_skeleton(file_name::AbstractString)
 
     open(skeleton_file, "w+") do f
         for line in lines
-            occursin("#%", line) ? continue : write(f, line)    
+            occursin("#%", line) ? write(f, "\n") : write(f, line)    
         end
     end
     
@@ -45,4 +45,12 @@ Converts a file `exercise_complete.ipynb` into `exercise_complete.jl`. Use this 
 function generate_script_from_solution(file_name::AbstractString)
     script_file = replace(file_name, ".ipynb" => ".jl")
     convert_doc(file_name, script_file)
+end
+
+```
+Generates both skeleton and complete notebooks.
+```
+function generate_notebooks(file_name::AbstractString)
+    generate_skeleton(file_name)
+    generate_solution(file_name)
 end
