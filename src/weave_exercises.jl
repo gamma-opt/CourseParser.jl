@@ -48,6 +48,60 @@ function generate_script_from_solution(file_name::AbstractString)
 end
 
 ```
+Converts a file `exercise_complete.ipynb` into `exercise.jl`. Use this to generate
+.jl scripts which will have the solution lines marked with '#%'.
+
+Assumes that inside each code cell, the parts that should be removed from the skeleton are
+separated by lines corresponding to the parameter _keyword_.
+
+Example input:
+a = 1
+b = 2
+function addition(a,b)
+#%
+    return a+b
+#%
+end
+```
+function generate_processed_script_from_solution(file_name::AbstractString; keyword="#%")
+    doc = Weave.WeaveDoc(file_name)
+    for chunk in filter(chunk -> typeof(chunk) == Weave.CodeChunk, doc.chunks)
+        flag = false
+        new_content = ""
+        for line in split(chunk.content,"\n")
+            if flag
+                if line == keyword
+                    flag = false
+                else
+                    new_content *= "#% " * line * "\n"
+                end
+            else
+                if line == keyword
+                    flag = true
+                else
+                    new_content *= line * "\n"
+                end
+            end
+        end
+        if flag
+            @warn("Unmatched " * keyword * " in code cell number $(chunk.number), cell is passed through as is!")
+        else
+            chunk.content = new_content
+        end
+    end
+
+    converted = Weave._convert_doc(doc, "script")
+
+    outfile = replace(file_name, ".ipynb" => ".jl")
+    outfile = replace(outfile, "_complete" => "")
+    open(outfile, "w") do f
+        write(f, converted)
+    end
+    return outfile
+end
+
+
+```
 Generates both skeleton and complete notebooks.
 ```
 function generate_notebooks(file_name::AbstractString)
