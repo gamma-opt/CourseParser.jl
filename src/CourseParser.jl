@@ -2,6 +2,7 @@ module CourseParser
 
 include("weave_exercises.jl")
 include("latex_files.jl")
+include("auto_grading.jl")
 
 export generate_solution,
        generate_skeleton,
@@ -11,5 +12,9 @@ export generate_solution,
 
 export latex_files,
        latex_file        
+
+export ipynb_to_jl_keyword,
+       get_folders,
+       find_notebook
 
 end # module
