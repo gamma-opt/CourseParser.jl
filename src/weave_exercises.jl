@@ -53,15 +53,6 @@ Converts a file `exercise_complete.ipynb` into `exercise.jl`. Use this to genera
 
 Assumes that inside each code cell, the parts that should be removed from the skeleton are
 separated by lines corresponding to the parameter _keyword_.
-
-Example input:
-a = 1
-b = 2
-function addition(a,b)
-#%
-    return a+b
-#%
-end
 ```
 function generate_processed_script_from_solution(file_name::AbstractString; keyword="#%")
     doc = Weave.WeaveDoc(file_name)
