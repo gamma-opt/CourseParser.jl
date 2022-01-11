@@ -1,23 +1,26 @@
-
-
+#' 
 #' # Testing exercise generation
-
-
-#' This would be the text for the exercise... Works exactly like in a notebook. We mark with 2  
-#' hashtags (##) lines to be present only in the solution.
+#' #' 
+#' This would be the text for the exercise... The main document that we maintain is the complete notebook and in each code cell, the parts that should be removed in the skeleton are separated with lines containing only #%
 #' $Ax = b$
+#' 
+#+ 
 
-# TODO
 println("Hello!")
 
-## # Solution
-## using JuMP
-## m = Model()
+#TODO
+#% # Solution
+#% using JuMP
+#% m = Model()
 
-#'
 
-# TODO
 
-## # Solution 2
-## using Cbc
-## optimize!(m)
+#+ 
+
+using Cbc
+function solve_model(m)
+    #TODO
+#%     optimize!(m)
+end
+
+
