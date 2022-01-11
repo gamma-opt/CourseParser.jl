@@ -69,5 +69,5 @@ Generates both skeleton and complete notebooks.
 function generate_skeleton(file_name::AbstractString)
     jl_file = _generate_script_from_solution(file_name)
     _generate_skeleton(jl_file)
-    # rm(jl_file)
+    rm(jl_file)
 end
