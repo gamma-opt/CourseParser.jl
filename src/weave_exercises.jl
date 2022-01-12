@@ -40,6 +40,7 @@ function _generate_script_from_solution(file_name::AbstractString; keyword="#%")
             else
                 if strip(line) == keyword
                     flag = true
+                    new_content *= "# TODO: add your code here\n"
                 else
                     new_content *= line * "\n"
                 end
