@@ -73,7 +73,7 @@ function _generate_script_from_solution(file_name::AbstractString; if_keyword="#
             end
         end
         if if_flag
-            @warn("Unmatched " * keyword * " in code cell number $(chunk.number), cell is passed through as is!")
+            @warn("Unmatched " * if_keyword * " in code cell number $(chunk.number), cell is passed through as is!")
         else
             chunk.content = new_content
         end
