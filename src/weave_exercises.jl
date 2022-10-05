@@ -65,7 +65,7 @@ end
 
 
 ```
-Generates both skeleton and complete notebooks.
+Generates skeleton from complete notebooks.
 ```
 function generate_skeleton(file_name::AbstractString)
     jl_file = _generate_script_from_solution(file_name)
