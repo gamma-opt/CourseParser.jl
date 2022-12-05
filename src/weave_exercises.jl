@@ -28,6 +28,7 @@ separated by lines corresponding to the parameter _keyword_.
 function _generate_script_from_solution(file_name::AbstractString; keyword="#%")
     doc = Weave.WeaveDoc(file_name)
     for chunk in filter(chunk -> typeof(chunk) == Weave.CodeChunk, doc.chunks)
+        indentlevel = 0
         flag = false
         new_content = ""
         for line in split(chunk.content,"\n")
@@ -40,9 +41,14 @@ function _generate_script_from_solution(file_name::AbstractString; keyword="#%")
             else
                 if strip(line) == keyword
                     flag = true
-                    new_content *= "# TODO: add your code here\n"
+                    new_content *= ("    "^indentlevel)*"# TODO: add your code here\n"
                 else
                     new_content *= line * "\n"
+                    if startswith(strip(line), r"function |if |for |while")
+                        indentlevel += 1
+                    elseif strip(line) == "end"
+                        indentlevel -= 1
+                    end
                 end
             end
         end
